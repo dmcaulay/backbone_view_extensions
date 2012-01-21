@@ -1,0 +1,28 @@
+<div class="new-heading">
+  <%= @form_title %>
+</div>
+<form id="group-form" name="group">
+  <div class="field">
+    <%- @label "owner" %>
+    <%- @owner %>
+  </div>
+  <div class="field">
+    <%- @label "name" %><br />
+    <%- @textField "name" %>
+  </div>
+  <div class="field">
+    <%- @label "description" %><br />
+    <%- @textArea "description" %>
+  </div>
+  <div class="field">
+    <%- @label "privacy" %><br />
+    <%- @numberField "privacy" %>
+  </div>
+  <div class="field">
+    <%- @label "user_list" %><br />
+    <%- @textField "user_list" %>
+  </div>
+  <div class="submit">
+    <input name="commit" type="submit" value="<%= @form_title %>" />
+  </div>
+</form>
